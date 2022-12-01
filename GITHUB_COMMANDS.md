@@ -11,6 +11,28 @@ git add .
 git commit -m "message"
 git push
 
+#others
+
+##start git to listen to changes
+git init 
+
+##for non-online folder, connects to a web 
+git remote add origin <SSH or HTTP URL>
+
+##sets current local branch as main
+git branch -M main
+
+##pushes code to <remote> <from this branch>
+git push -u origin main
+
+##checkout switches branch, -b makes new branch, test is the name of the new branch
+git checkout -b test
+
+##check all existing branches
+git branch
+
+##merge the <branch> named test with the main
+git merge test
 
 
 #one command updating
